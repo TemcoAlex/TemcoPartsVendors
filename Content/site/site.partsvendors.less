@@ -1,0 +1,30 @@
+﻿@import "site.mixins.less";
+
+.s-PartsVendors-PartsDialog {
+    > .size { width: 850px; height: 650px; }
+    .caption { width: 130px; }
+
+    @media (min-width: 800px) {
+        .field.PnPartNumber, .field.PnTitle, .field.PnDetail,.field.PnNotes { 
+            flex: auto;
+            min-width: 100%;
+              
+        }
+        .field.PnTypeId, .field.PnCurrentCost, .field.Pnunid, .field.PnRevision, 
+        .field.PnStatus, .field.PnReqBy, .field.PnDate, .field.PnQty ,.field.PnMinStockQty,
+        .field.PnUser1, .field.PnUser2, .field.PnUser3, .field.PnUser4, 
+        .field.PnUser5, .field.PnUser6, .field.PnUser7, .field.PnUser8 
+        {
+            flex: auto;
+            min-width: 25%;
+        }
+     .field.PnPrimaryImage, .field.PnGalleryImages,.field.PnFileNames
+         {
+            flex: auto;
+            min-width: 50%;
+         }
+        
+        
+    }
+}
+

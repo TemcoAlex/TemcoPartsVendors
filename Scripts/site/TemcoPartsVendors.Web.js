@@ -561,6 +561,55 @@ var TemcoPartsVendors;
 (function (TemcoPartsVendors) {
     var PartsVendors;
     (function (PartsVendors) {
+        var CustomDataForm = (function (_super) {
+            __extends(CustomDataForm, _super);
+            function CustomDataForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            return CustomDataForm;
+        }(Serenity.PrefixedContext));
+        CustomDataForm.formKey = 'PartsVendors.CustomData';
+        PartsVendors.CustomDataForm = CustomDataForm;
+        [['Gprefid', function () { return Serenity.IntegerEditor; }], ['GprefKey', function () { return Serenity.StringEditor; }], ['GprefText1', function () { return Serenity.StringEditor; }], ['GprefText2', function () { return Serenity.StringEditor; }], ['GprefText3', function () { return Serenity.StringEditor; }], ['GprefText4', function () { return Serenity.StringEditor; }], ['GprefText5', function () { return Serenity.StringEditor; }], ['GprefBool1', function () { return Serenity.BooleanEditor; }], ['GprefBool2', function () { return Serenity.BooleanEditor; }], ['GprefBool3', function () { return Serenity.BooleanEditor; }], ['GprefBool4', function () { return Serenity.BooleanEditor; }], ['GprefInt1', function () { return Serenity.IntegerEditor; }], ['GprefText6', function () { return Serenity.StringEditor; }], ['GprefText7', function () { return Serenity.StringEditor; }], ['GprefText8', function () { return Serenity.StringEditor; }], ['GprefText9', function () { return Serenity.StringEditor; }], ['GprefText10', function () { return Serenity.StringEditor; }]].forEach(function (x) { return Object.defineProperty(CustomDataForm.prototype, x[0], { get: function () { return this.w(x[0], x[1]()); }, enumerable: true, configurable: true }); });
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var CustomDataRow;
+        (function (CustomDataRow) {
+            CustomDataRow.idProperty = 'Gprefid';
+            CustomDataRow.nameProperty = 'GprefKey';
+            CustomDataRow.localTextPrefix = 'PartsVendors.CustomData';
+            var Fields;
+            (function (Fields) {
+            })(Fields = CustomDataRow.Fields || (CustomDataRow.Fields = {}));
+            ['Gprefid', 'GprefKey', 'GprefText1', 'GprefText2', 'GprefText3', 'GprefText4', 'GprefText5', 'GprefBool1', 'GprefBool2', 'GprefBool3', 'GprefBool4', 'GprefInt1', 'GprefText6', 'GprefText7', 'GprefText8', 'GprefText9', 'GprefText10'].forEach(function (x) { return Fields[x] = x; });
+        })(CustomDataRow = PartsVendors.CustomDataRow || (PartsVendors.CustomDataRow = {}));
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var CustomDataService;
+        (function (CustomDataService) {
+            CustomDataService.baseUrl = 'PartsVendors/CustomData';
+            var Methods;
+            (function (Methods) {
+            })(Methods = CustomDataService.Methods || (CustomDataService.Methods = {}));
+            ['Create', 'Update', 'Delete', 'Retrieve', 'List'].forEach(function (x) {
+                CustomDataService[x] = function (r, s, o) { return Q.serviceRequest(CustomDataService.baseUrl + '/' + x, r, s, o); };
+                Methods[x] = CustomDataService.baseUrl + '/' + x;
+            });
+        })(CustomDataService = PartsVendors.CustomDataService || (PartsVendors.CustomDataService = {}));
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
         var CustomerDefineForm = (function (_super) {
             __extends(CustomerDefineForm, _super);
             function CustomerDefineForm() {
@@ -570,7 +619,7 @@ var TemcoPartsVendors;
         }(Serenity.PrefixedContext));
         CustomerDefineForm.formKey = 'PartsVendors.CustomerDefine';
         PartsVendors.CustomerDefineForm = CustomerDefineForm;
-        [['Gprefid', function () { return Serenity.IntegerEditor; }], ['GprefKey', function () { return Serenity.StringEditor; }], ['GprefText1', function () { return Serenity.StringEditor; }], ['GprefText2', function () { return Serenity.StringEditor; }], ['GprefText3', function () { return Serenity.StringEditor; }], ['GprefText4', function () { return Serenity.StringEditor; }], ['GprefText5', function () { return Serenity.StringEditor; }], ['GprefBool1', function () { return Serenity.BooleanEditor; }], ['GprefBool2', function () { return Serenity.BooleanEditor; }], ['GprefBool3', function () { return Serenity.BooleanEditor; }], ['GprefBool4', function () { return Serenity.BooleanEditor; }], ['GprefInt1', function () { return Serenity.IntegerEditor; }], ['GprefText6', function () { return Serenity.StringEditor; }], ['GprefText7', function () { return Serenity.StringEditor; }], ['GprefText8', function () { return Serenity.StringEditor; }], ['GprefText9', function () { return Serenity.StringEditor; }], ['GprefText10', function () { return Serenity.StringEditor; }]].forEach(function (x) { return Object.defineProperty(CustomerDefineForm.prototype, x[0], { get: function () { return this.w(x[0], x[1]()); }, enumerable: true, configurable: true }); });
+        [['GprefKey', function () { return Serenity.StringEditor; }], ['GprefText1', function () { return Serenity.StringEditor; }], ['GprefText2', function () { return Serenity.StringEditor; }], ['GprefText3', function () { return Serenity.StringEditor; }], ['GprefText4', function () { return Serenity.StringEditor; }], ['GprefText5', function () { return Serenity.StringEditor; }], ['GprefBool1', function () { return Serenity.BooleanEditor; }], ['GprefBool2', function () { return Serenity.BooleanEditor; }], ['GprefBool3', function () { return Serenity.BooleanEditor; }], ['GprefBool4', function () { return Serenity.BooleanEditor; }], ['GprefInt1', function () { return Serenity.IntegerEditor; }], ['GprefText6', function () { return Serenity.StringEditor; }], ['GprefText7', function () { return Serenity.StringEditor; }], ['GprefText8', function () { return Serenity.StringEditor; }], ['GprefText9', function () { return Serenity.StringEditor; }], ['GprefText10', function () { return Serenity.StringEditor; }]].forEach(function (x) { return Object.defineProperty(CustomerDefineForm.prototype, x[0], { get: function () { return this.w(x[0], x[1]()); }, enumerable: true, configurable: true }); });
     })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
 })(TemcoPartsVendors || (TemcoPartsVendors = {}));
 var TemcoPartsVendors;
@@ -659,6 +708,55 @@ var TemcoPartsVendors;
 (function (TemcoPartsVendors) {
     var PartsVendors;
     (function (PartsVendors) {
+        var PartsForm = (function (_super) {
+            __extends(PartsForm, _super);
+            function PartsForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            return PartsForm;
+        }(Serenity.PrefixedContext));
+        PartsForm.formKey = 'PartsVendors.Parts';
+        PartsVendors.PartsForm = PartsForm;
+        [['PnPartNumber', function () { return Serenity.StringEditor; }], ['PnTitle', function () { return Serenity.StringEditor; }], ['PnDetail', function () { return Serenity.StringEditor; }], ['PnTypeId', function () { return Serenity.LookupEditor; }], ['PnCurrentCost', function () { return Serenity.DecimalEditor; }], ['Pnunid', function () { return Serenity.LookupEditor; }], ['PnRevision', function () { return Serenity.StringEditor; }], ['PnStatus', function () { return Serenity.StringEditor; }], ['PnReqBy', function () { return Serenity.StringEditor; }], ['PnDate', function () { return Serenity.DateEditor; }], ['PnQty', function () { return Serenity.DecimalEditor; }], ['PnMinStockQty', function () { return Serenity.DecimalEditor; }], ['PnUser1', function () { return Serenity.StringEditor; }], ['PnUser2', function () { return Serenity.StringEditor; }], ['PnUser3', function () { return Serenity.StringEditor; }], ['PnUser4', function () { return Serenity.StringEditor; }], ['PnUser5', function () { return Serenity.StringEditor; }], ['PnUser6', function () { return Serenity.StringEditor; }], ['PnUser7', function () { return Serenity.StringEditor; }], ['PnUser8', function () { return Serenity.StringEditor; }], ['PnPrimaryImage', function () { return Serenity.ImageUploadEditor; }], ['PnGalleryImages', function () { return Serenity.MultipleImageUploadEditor; }], ['PnFileNames', function () { return Serenity.MultipleImageUploadEditor; }], ['PnNotes', function () { return Serenity.TextAreaEditor; }]].forEach(function (x) { return Object.defineProperty(PartsForm.prototype, x[0], { get: function () { return this.w(x[0], x[1]()); }, enumerable: true, configurable: true }); });
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var PartsRow;
+        (function (PartsRow) {
+            PartsRow.idProperty = 'Pnid';
+            PartsRow.nameProperty = 'PnPartNumber';
+            PartsRow.localTextPrefix = 'PartsVendors.Parts';
+            var Fields;
+            (function (Fields) {
+            })(Fields = PartsRow.Fields || (PartsRow.Fields = {}));
+            ['Pnid', 'Pnunid', 'PnTypeId', 'PnPartNumber', 'PnTitle', 'PnDetail', 'PnTypeTypeType', 'PnCurrentCost', 'PnunidUnUseUnits', 'PnUNPurchUnits', 'PnUNConvUnits', 'PnQty', 'PnMinStockQty', 'PnRevision', 'PnStatus', 'PnReqBy', 'PnNotes', 'PnUser1', 'PnUser2', 'PnUser3', 'PnUser4', 'PnUser5', 'PnUser6', 'PnUser7', 'PnUser8', 'PnDate', 'PnPrimaryImage', 'PnGalleryImages', 'PnFileNames'].forEach(function (x) { return Fields[x] = x; });
+        })(PartsRow = PartsVendors.PartsRow || (PartsVendors.PartsRow = {}));
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var PartsService;
+        (function (PartsService) {
+            PartsService.baseUrl = 'PartsVendors/Parts';
+            var Methods;
+            (function (Methods) {
+            })(Methods = PartsService.Methods || (PartsService.Methods = {}));
+            ['Create', 'Update', 'Delete', 'Retrieve', 'List'].forEach(function (x) {
+                PartsService[x] = function (r, s, o) { return Q.serviceRequest(PartsService.baseUrl + '/' + x, r, s, o); };
+                Methods[x] = PartsService.baseUrl + '/' + x;
+            });
+        })(PartsService = PartsVendors.PartsService || (PartsVendors.PartsService = {}));
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
         var ShipmentForm = (function (_super) {
             __extends(ShipmentForm, _super);
             function ShipmentForm() {
@@ -708,55 +806,6 @@ var TemcoPartsVendors;
 (function (TemcoPartsVendors) {
     var PartsVendors;
     (function (PartsVendors) {
-        var TestUnitForm = (function (_super) {
-            __extends(TestUnitForm, _super);
-            function TestUnitForm() {
-                return _super !== null && _super.apply(this, arguments) || this;
-            }
-            return TestUnitForm;
-        }(Serenity.PrefixedContext));
-        TestUnitForm.formKey = 'PartsVendors.TestUnit';
-        PartsVendors.TestUnitForm = TestUnitForm;
-        [['TestId', function () { return Serenity.IntegerEditor; }], ['TestName', function () { return Serenity.StringEditor; }], ['TestUnit', function () { return Serenity.StringEditor; }]].forEach(function (x) { return Object.defineProperty(TestUnitForm.prototype, x[0], { get: function () { return this.w(x[0], x[1]()); }, enumerable: true, configurable: true }); });
-    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
-})(TemcoPartsVendors || (TemcoPartsVendors = {}));
-var TemcoPartsVendors;
-(function (TemcoPartsVendors) {
-    var PartsVendors;
-    (function (PartsVendors) {
-        var TestUnitRow;
-        (function (TestUnitRow) {
-            TestUnitRow.idProperty = 'TestId';
-            TestUnitRow.nameProperty = 'TestUnit';
-            TestUnitRow.localTextPrefix = 'PartsVendors.TestUnit';
-            var Fields;
-            (function (Fields) {
-            })(Fields = TestUnitRow.Fields || (TestUnitRow.Fields = {}));
-            ['TestId', 'TestName', 'TestUnit'].forEach(function (x) { return Fields[x] = x; });
-        })(TestUnitRow = PartsVendors.TestUnitRow || (PartsVendors.TestUnitRow = {}));
-    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
-})(TemcoPartsVendors || (TemcoPartsVendors = {}));
-var TemcoPartsVendors;
-(function (TemcoPartsVendors) {
-    var PartsVendors;
-    (function (PartsVendors) {
-        var TestUnitService;
-        (function (TestUnitService) {
-            TestUnitService.baseUrl = 'PartsVendors/TestUnit';
-            var Methods;
-            (function (Methods) {
-            })(Methods = TestUnitService.Methods || (TestUnitService.Methods = {}));
-            ['Create', 'Update', 'Delete', 'Retrieve', 'List'].forEach(function (x) {
-                TestUnitService[x] = function (r, s, o) { return Q.serviceRequest(TestUnitService.baseUrl + '/' + x, r, s, o); };
-                Methods[x] = TestUnitService.baseUrl + '/' + x;
-            });
-        })(TestUnitService = PartsVendors.TestUnitService || (PartsVendors.TestUnitService = {}));
-    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
-})(TemcoPartsVendors || (TemcoPartsVendors = {}));
-var TemcoPartsVendors;
-(function (TemcoPartsVendors) {
-    var PartsVendors;
-    (function (PartsVendors) {
         var TypeForm = (function (_super) {
             __extends(TypeForm, _super);
             function TypeForm() {
@@ -778,6 +827,11 @@ var TemcoPartsVendors;
             TypeRow.idProperty = 'Typeid';
             TypeRow.nameProperty = 'TypeType';
             TypeRow.localTextPrefix = 'PartsVendors.Type';
+            TypeRow.lookupKey = 'PartsVenros.Type';
+            function getLookup() {
+                return Q.getLookup('PartsVenros.Type');
+            }
+            TypeRow.getLookup = getLookup;
             var Fields;
             (function (Fields) {
             })(Fields = TypeRow.Fields || (TypeRow.Fields = {}));
@@ -827,6 +881,11 @@ var TemcoPartsVendors;
             UnitsRow.idProperty = 'Unid';
             UnitsRow.nameProperty = 'UnUseUnits';
             UnitsRow.localTextPrefix = 'PartsVendors.Units';
+            UnitsRow.lookupKey = 'PartsVenros.Units';
+            function getLookup() {
+                return Q.getLookup('PartsVenros.Units');
+            }
+            UnitsRow.getLookup = getLookup;
             var Fields;
             (function (Fields) {
             })(Fields = UnitsRow.Fields || (UnitsRow.Fields = {}));
@@ -849,6 +908,22 @@ var TemcoPartsVendors;
                 Methods[x] = UnitsService.baseUrl + '/' + x;
             });
         })(UnitsService = PartsVendors.UnitsService || (PartsVendors.UnitsService = {}));
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var UserFieldsForm = (function (_super) {
+            __extends(UserFieldsForm, _super);
+            function UserFieldsForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            return UserFieldsForm;
+        }(Serenity.PrefixedContext));
+        UserFieldsForm.formKey = 'PartsVendors.UserFieldsForm';
+        PartsVendors.UserFieldsForm = UserFieldsForm;
+        [['GprefKey', function () { return Serenity.StringEditor; }], ['GprefText1', function () { return Serenity.StringEditor; }], ['GprefText2', function () { return Serenity.StringEditor; }], ['GprefText3', function () { return Serenity.StringEditor; }], ['GprefText4', function () { return Serenity.StringEditor; }], ['GprefText5', function () { return Serenity.StringEditor; }], ['GprefText6', function () { return Serenity.StringEditor; }], ['GprefText7', function () { return Serenity.StringEditor; }], ['GprefText8', function () { return Serenity.StringEditor; }], ['GprefText9', function () { return Serenity.StringEditor; }], ['GprefText10', function () { return Serenity.StringEditor; }]].forEach(function (x) { return Object.defineProperty(UserFieldsForm.prototype, x[0], { get: function () { return this.w(x[0], x[1]()); }, enumerable: true, configurable: true }); });
     })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
 })(TemcoPartsVendors || (TemcoPartsVendors = {}));
 var TemcoPartsVendors;
@@ -3252,6 +3327,55 @@ var TemcoPartsVendors;
 (function (TemcoPartsVendors) {
     var PartsVendors;
     (function (PartsVendors) {
+        var PartsDialog = (function (_super) {
+            __extends(PartsDialog, _super);
+            function PartsDialog() {
+                var _this = _super.call(this) || this;
+                _this.form = new PartsVendors.PartsForm(_this.idPrefix);
+                _this.element.closest('.ui-dialog').find('.ui-dialog-titlebar-maximize').click();
+                return _this;
+            }
+            PartsDialog.prototype.getFormKey = function () { return PartsVendors.PartsForm.formKey; };
+            PartsDialog.prototype.getIdProperty = function () { return PartsVendors.PartsRow.idProperty; };
+            PartsDialog.prototype.getLocalTextPrefix = function () { return PartsVendors.PartsRow.localTextPrefix; };
+            PartsDialog.prototype.getNameProperty = function () { return PartsVendors.PartsRow.nameProperty; };
+            PartsDialog.prototype.getService = function () { return PartsVendors.PartsService.baseUrl; };
+            return PartsDialog;
+        }(Serenity.EntityDialog));
+        PartsDialog = __decorate([
+            Serenity.Decorators.maximizable(true),
+            Serenity.Decorators.registerClass(),
+            Serenity.Decorators.responsive()
+        ], PartsDialog);
+        PartsVendors.PartsDialog = PartsDialog;
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var PartsGrid = (function (_super) {
+            __extends(PartsGrid, _super);
+            function PartsGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            PartsGrid.prototype.getColumnsKey = function () { return 'PartsVendors.Parts'; };
+            PartsGrid.prototype.getDialogType = function () { return PartsVendors.PartsDialog; };
+            PartsGrid.prototype.getIdProperty = function () { return PartsVendors.PartsRow.idProperty; };
+            PartsGrid.prototype.getLocalTextPrefix = function () { return PartsVendors.PartsRow.localTextPrefix; };
+            PartsGrid.prototype.getService = function () { return PartsVendors.PartsService.baseUrl; };
+            return PartsGrid;
+        }(Serenity.EntityGrid));
+        PartsGrid = __decorate([
+            Serenity.Decorators.registerClass()
+        ], PartsGrid);
+        PartsVendors.PartsGrid = PartsGrid;
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
         var CompanyDialog = (function (_super) {
             __extends(CompanyDialog, _super);
             function CompanyDialog() {
@@ -3340,6 +3464,31 @@ var TemcoPartsVendors;
             Serenity.Decorators.registerClass()
         ], CustomerDefineGrid);
         PartsVendors.CustomerDefineGrid = CustomerDefineGrid;
+    })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
+})(TemcoPartsVendors || (TemcoPartsVendors = {}));
+var TemcoPartsVendors;
+(function (TemcoPartsVendors) {
+    var PartsVendors;
+    (function (PartsVendors) {
+        var UserFieldsDialog = (function (_super) {
+            __extends(UserFieldsDialog, _super);
+            function UserFieldsDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new PartsVendors.UserFieldsForm(_this.idPrefix);
+                return _this;
+            }
+            UserFieldsDialog.prototype.getFormKey = function () { return PartsVendors.UserFieldsForm.formKey; };
+            UserFieldsDialog.prototype.getIdProperty = function () { return PartsVendors.CustomerDefineRow.idProperty; };
+            UserFieldsDialog.prototype.getLocalTextPrefix = function () { return PartsVendors.CustomerDefineRow.localTextPrefix; };
+            UserFieldsDialog.prototype.getNameProperty = function () { return PartsVendors.CustomerDefineRow.nameProperty; };
+            UserFieldsDialog.prototype.getService = function () { return PartsVendors.CustomerDefineService.baseUrl; };
+            return UserFieldsDialog;
+        }(Serenity.EntityDialog));
+        UserFieldsDialog = __decorate([
+            Serenity.Decorators.registerClass(),
+            Serenity.Decorators.responsive()
+        ], UserFieldsDialog);
+        PartsVendors.UserFieldsDialog = UserFieldsDialog;
     })(PartsVendors = TemcoPartsVendors.PartsVendors || (TemcoPartsVendors.PartsVendors = {}));
 })(TemcoPartsVendors || (TemcoPartsVendors = {}));
 var TemcoPartsVendors;

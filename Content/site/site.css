@@ -7452,6 +7452,48 @@ section.content > .s-DataGrid {
 .inline-action.add-child-unit {
   background-image: url(../serenity/images/node-insert-next.png);
 }
+.s-PartsVendors-PartsDialog > .size {
+  width: 850px;
+  height: 650px;
+}
+.s-PartsVendors-PartsDialog .caption {
+  width: 130px;
+}
+@media (min-width: 800px) {
+  .s-PartsVendors-PartsDialog .field.PnPartNumber,
+  .s-PartsVendors-PartsDialog .field.PnTitle,
+  .s-PartsVendors-PartsDialog .field.PnDetail,
+  .s-PartsVendors-PartsDialog .field.PnNotes {
+    flex: auto;
+    min-width: 100%;
+  }
+  .s-PartsVendors-PartsDialog .field.PnTypeId,
+  .s-PartsVendors-PartsDialog .field.PnCurrentCost,
+  .s-PartsVendors-PartsDialog .field.Pnunid,
+  .s-PartsVendors-PartsDialog .field.PnRevision,
+  .s-PartsVendors-PartsDialog .field.PnStatus,
+  .s-PartsVendors-PartsDialog .field.PnReqBy,
+  .s-PartsVendors-PartsDialog .field.PnDate,
+  .s-PartsVendors-PartsDialog .field.PnQty,
+  .s-PartsVendors-PartsDialog .field.PnMinStockQty,
+  .s-PartsVendors-PartsDialog .field.PnUser1,
+  .s-PartsVendors-PartsDialog .field.PnUser2,
+  .s-PartsVendors-PartsDialog .field.PnUser3,
+  .s-PartsVendors-PartsDialog .field.PnUser4,
+  .s-PartsVendors-PartsDialog .field.PnUser5,
+  .s-PartsVendors-PartsDialog .field.PnUser6,
+  .s-PartsVendors-PartsDialog .field.PnUser7,
+  .s-PartsVendors-PartsDialog .field.PnUser8 {
+    flex: auto;
+    min-width: 25%;
+  }
+  .s-PartsVendors-PartsDialog .field.PnPrimaryImage,
+  .s-PartsVendors-PartsDialog .field.PnGalleryImages,
+  .s-PartsVendors-PartsDialog .field.PnFileNames {
+    flex: auto;
+    min-width: 50%;
+  }
+}
 .s-PartsVendors-TypeDialog > .size {
   width: 650px;
 }
@@ -7512,12 +7554,6 @@ section.content > .s-DataGrid {
 .s-PartsVendors-ExchangeRateDialog .caption {
   width: 150px;
 }
-.s-PartsVendors-ExchangeRateDialog > .size {
-  width: 650px;
-}
-.s-PartsVendors-ExchangeRateDialog .caption {
-  width: 150px;
-}
 .s-PartsVendors-CompanyDialog > .size {
   width: 650px;
 }
@@ -7534,11 +7570,5 @@ section.content > .s-DataGrid {
   width: 650px;
 }
 .s-PartsVendors-TestUnitDialog .caption {
-  width: 150px;
-}
-.s-PartsVendors-CustomerDefineDialog > .size {
-  width: 650px;
-}
-.s-PartsVendors-CustomerDefineDialog .caption {
   width: 150px;
 }
